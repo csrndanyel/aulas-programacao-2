@@ -1,0 +1,68 @@
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora com js</title>
+
+  <style>
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    input {
+      display: block;
+      padding: 10px;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <h1>Calculadora</h1>
+
+    <input class="n1" type="number" placeholder="Insira o primeiro numero">
+    <input class="n2" type="number" placeholder="Insira o segundo numero">
+
+    <button onclick="somar()">Somar +</button>
+    <button onclick="subtrair()">Subtrair -</button>
+    <button onclick="multiplicar()">Multiplicar *</button>
+    <button onclick="dividir()">Dividir /</button>
+
+    <p>Resultado: </p>
+    <p class="resultado"></p>
+  </div>
+  
+  <script>
+    function somar() {
+      var n1 = +document.querySelector('.n1').value
+      var n2 = +document.querySelector('.n2').value
+      var resposta = n1 + n2
+      document.querySelector('.resultado').innerHTML=(resposta);
+    }
+
+    function subtrair() {
+      var n1 = +document.querySelector('.n1').value
+      var n2 = +document.querySelector('.n2').value
+      var resposta = n1 - n2
+      document.querySelector('.resultado').innerHTML=(resposta);
+    }
+
+    function multiplicar() {
+      var n1 = +document.querySelector('.n1').value
+      var n2 = +document.querySelector('.n2').value
+      var resposta = n1 * n2
+      document.querySelector('.resultado').innerHTML=(resposta);
+    }
+
+    function dividir() {
+      var n1 = +document.querySelector('.n1').value
+      var n2 = +document.querySelector('.n2').value
+      var resposta = n1 /  n2
+      document.querySelector('.resultado').innerHTML=(resposta);
+    }
+
+  </script>
+
+</body>
+</html>
