@@ -1,0 +1,112 @@
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background: url(../../assets/img/bkg-1.jpg) center no-repeat;
+  background-size: cover;
+  color: #FFF;
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 25px;
+  background: #FF4900;
+  padding: 15px 30px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 3em;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+
+section li {
+  font-size: 2em;
+  line-height: 25px;
+  padding-bottom: 10px;
+}
+
+a { 
+  text-decoration: none;
+  color: #FFF;
+}
+
+section {
+  margin-top: 50px;
+}
+
+.content-768 {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.header {
+  background: url(../../assets/images/bkg/bkg-header.png) bottom right no-repeat;
+  background-size: 57%;
+  width: 100%;
+  height: 100%;
+}
+
+.header-menu {
+  display: flex;
+  padding-top: 25px;
+}
+
+.menu {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.menu ul {
+  float: right;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.menu ul li a {
+  padding: 30px 20px;
+  font-size: 1.8em;
+}
+
+.link-menu {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.menu ul li .btn-full {
+  background: #FF4900;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+.about-me::before {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 100px;
+  background: #FF4900;
+  position: absolute;
+  top: 0;
+  z-index: -2;
+}
+
+.menu-content {
+  max-width: 550px;
+  margin-left: 100px;
+  position: absolute;
+  top: 250px;
+}
+
+.menu-content h1.title {
+  text-transform: uppercase;
+}
+
